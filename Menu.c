@@ -1,6 +1,11 @@
 //Ejercicio menu version 1
 
 #include<stdio.h>
+//Prototipos de las funciones: 
+void opcion1();
+void opcion2();
+void opcion3();
+
 int main () {
     int op;
     while(op != 0) {
@@ -13,11 +18,11 @@ int main () {
             scanf("%d", &op);
         }while (op < 0 || op > 3); //Esto tambien se puede hacer con una negacion: (! (op >= 0 && op <= 2))
         switch (op) {
-            case 1: printf("Estoy en la opcion 1 \n"); 
+            case 1: opcion1();
             break;
-            case 2: printf("Estoy en la opcion 2 \n");
+            case 2: opcion2();
             break;
-            case 3: printf("Estoy en la opcion 3 \n");
+            case 3: opcion3();
             break;
             case 0: printf("Saliendo del menu \n");
             break; 
@@ -26,4 +31,17 @@ int main () {
     }
     printf("Fin del programa \n");
     return 0;
+}
+//Funciones:
+void opcion1() {
+    printf("Estoy en la opcion 1 \n"); 
+    return;
+}
+void opcion2() {
+    printf("Estoy en la opcion 2 \n"); 
+    return;
+}
+void opcion3() {
+    printf("Estoy en la opcion 3 \n"); 
+    return;
 }
