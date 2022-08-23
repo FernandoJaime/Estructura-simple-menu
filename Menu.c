@@ -1,5 +1,5 @@
 //Ejercicio menu version 1
-//Rama desarrollo
+//Rama master
 
 #include<stdio.h>
 //Prototipos de las funciones: 
